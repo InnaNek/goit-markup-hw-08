@@ -5,7 +5,7 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.03em;
-    margin-right: 93px;
+   padding: 16px 0;
 }
 
 
@@ -19,3 +19,13 @@
 .logo--part-footer {
     color: var(--light-text-color);
 }
+@media only screen and (min-width: 768px) {
+   .logo{
+    margin-right: 88px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+    .logo{
+     margin-right: 93px;
+   }
+ }

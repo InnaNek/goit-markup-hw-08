@@ -1,0 +1,16 @@
+.mobile__open-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    padding: 0;
+    &:focus > .mobile__icon-burger{
+fill: #2196F3;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .mobile__open-btn{
+     display: none;
+     
+   }}
