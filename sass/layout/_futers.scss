@@ -1,0 +1,37 @@
+.futers__section {
+    padding-bottom: 0;
+}
+
+.futers__list {
+    display: flex;
+    gap: 30px;
+}
+
+.futers__item {
+    width: calc((100% - 90px) / 4);
+}
+
+.futers__icon-wrap {
+    border-radius: 4px;
+    background: #F5F4FA;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.fuetures__subtitle {
+
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.fuetures__text {
+    color: var(--secondary-text-color);
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
