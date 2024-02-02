@@ -1,15 +1,14 @@
 .futers__section {
-    padding-bottom: 0;
+    padding-bottom: 60px;
 }
 
 .futers__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
 }
 
-.futers__item {
-    width: calc((100% - 90px) / 4);
-}
+
 
 .futers__icon-wrap {
     border-radius: 4px;
@@ -22,7 +21,7 @@
 }
 
 .fuetures__subtitle {
-
+    text-align: center;
     font-size: 14px;
     margin-bottom: 10px;
     line-height: normal;
@@ -34,4 +33,26 @@
     color: var(--secondary-text-color);
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+@media only screen and (min-width: 768px) {
+   .futers__item{
+    width: calc((100% - 30px) / 2);
+    
+  }
+  .futers__list{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fuetures__subtitle{
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+    .futers__section{
+        padding-bottom: 0;
+    }
+    .futers__item{
+        width: calc((100% - 90px) / 4);
+        
+      }
 }

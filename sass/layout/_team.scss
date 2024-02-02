@@ -4,6 +4,8 @@
 }
 .team__list{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 .team__item {
@@ -69,4 +71,20 @@ height: 44px;
 
 .team__soc-icon {
     fill: currentColor;
+}
+@media only screen and (min-width: 768px) {
+    .team__list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   .team__item{
+    width: calc((100% - 30px) / 2);
+    
+  }
+}
+@media only screen and (min-width: 1200px) {
+    .team__item{
+        width: calc((100% - 90px) / 4);
+        
+      }
 }
