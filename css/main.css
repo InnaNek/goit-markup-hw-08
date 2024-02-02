@@ -443,16 +443,13 @@ address {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
   transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
 .is-hidden {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
@@ -460,13 +457,17 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  min-height: 609px;
   padding: 40px;
   border-radius: 4px;
   background: #FFF;
   transition: transform var(--timing-function);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
 }
 
 .modal-close-btn {
@@ -500,7 +501,7 @@ address {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .modal-field {
@@ -551,6 +552,7 @@ address {
 }
 
 .model-textarea {
+  display: block;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
@@ -632,6 +634,17 @@ address {
   background-color: #2196F3;
 }
 
+@media only screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 .mobile__menu {
   position: fixed;
   top: 0;
