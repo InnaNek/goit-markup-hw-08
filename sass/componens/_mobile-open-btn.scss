@@ -8,6 +8,9 @@
     &:focus > .mobile__icon-burger{
 fill: #2196F3;
     }
+    .mobile__icon-burger{
+        transition: fill var(--timing-function);
+    }
 }
 @media only screen and (min-width: 768px) {
     .mobile__open-btn{

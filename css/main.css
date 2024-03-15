@@ -458,7 +458,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
-  min-height: 609px;
+  height: 98%;
   padding: 40px;
   border-radius: 4px;
   background: #FFF;
@@ -580,7 +580,7 @@ address {
 
 .input-check-text {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.03em;
@@ -637,12 +637,16 @@ address {
 @media only screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
+  }
+  .input-check-text {
+    font-size: 14px;
   }
 }
 .mobile__menu {
@@ -681,11 +685,13 @@ address {
   padding: 0;
 }
 
-.mobile__icon-clouse {
-  transition: fill var(--timing-function);
-}
+.mobile__clouse-btn:hover .mobile__icon-clouse,
 .mobile__clouse-btn:focus .mobile__icon-clouse {
   fill: #2196F3;
+}
+
+.mobile__icon-clouses {
+  transition: fill var(--timing-function);
 }
 
 .mobile__nav-list {
@@ -774,6 +780,9 @@ address {
 }
 .mobile__open-btn:focus > .mobile__icon-burger {
   fill: #2196F3;
+}
+.mobile__open-btn .mobile__icon-burger {
+  transition: fill var(--timing-function);
 }
 
 @media only screen and (min-width: 768px) {
