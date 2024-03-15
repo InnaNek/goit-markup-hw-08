@@ -778,10 +778,13 @@ address {
   line-height: 0;
   padding: 0;
 }
-.mobile__open-btn:focus > .mobile__icon-burger {
+
+.mobile__open-btn:hover .mobile__icon-burger,
+.mobile__open-btn:focus .mobile__icon-burger {
   fill: #2196F3;
 }
-.mobile__open-btn .mobile__icon-burger {
+
+.mobile__icon-burger {
   transition: fill var(--timing-function);
 }
 
